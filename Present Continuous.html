@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Present Continuous — to'liq qo'llanma</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f3f7fc;--card:#fff;--ink:#13203b;--mute:#52607a;--acc:#2358e8;--sun:#ffc43d;--line:#d9e2f0;--ok:#16a34a;--no:#dc2626}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1729;--card:#18233d;--ink:#e8eefc;--mute:#9db0d3;--acc:#7da2ff;--line:#2a3a5e}}
+:root[data-theme="dark"]{--bg:#0f1729;--card:#18233d;--ink:#e8eefc;--mute:#9db0d3;--acc:#7da2ff;--line:#2a3a5e}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 Manrope,system-ui,sans-serif}
+main{max-width:860px;margin:0 auto;padding:20px 18px 60px}
+h1{font-size:clamp(34px,7vw,58px);line-height:1.05;margin:.3em 0 .2em;font-weight:800;letter-spacing:-.02em}
+h2{font-size:26px;margin:0 0 12px;font-weight:800}
+h3{font-size:18px;margin:18px 0 6px}
+section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;margin:20px 0}
+.lead{color:var(--mute);font-size:19px;max-width:60ch}
+.formula{background:var(--acc);color:#fff;border-radius:12px;padding:14px 18px;font-weight:800;font-size:20px;margin:12px 0}
+[data-theme="dark"] .formula,:root:not([data-theme="light"]) .formula{color:#0f1729}
+.ex{border-left:4px solid var(--sun);padding:4px 14px;margin:8px 0}
+.ex b{display:block}.ex span{color:var(--mute);font-size:15px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:520px}
+th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+th{background:color-mix(in srgb,var(--acc) 12%,var(--card))}
+.pos{color:var(--ok);font-weight:600}.neg{color:var(--no);font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.mini{border:1px solid var(--line);border-radius:12px;padding:14px}
+.mini svg{width:100%;height:96px;display:block;margin-bottom:8px}
+.tag{display:inline-block;background:color-mix(in srgb,var(--sun) 35%,var(--card));border-radius:20px;padding:2px 12px;margin:3px;font-weight:600;font-size:15px}
+.warn{background:color-mix(in srgb,var(--no) 10%,var(--card));border-radius:12px;padding:12px 16px;margin:10px 0}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+nav a{color:var(--acc);border:1px solid var(--line);border-radius:20px;padding:4px 14px;text-decoration:none;font-weight:600;font-size:15px}
+nav a:focus-visible,button:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.q{margin:16px 0}.opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+button{font:inherit;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:7px 14px;cursor:pointer}
+button.right{background:var(--ok);color:#fff;border-color:var(--ok)}button.wrong{background:var(--no);color:#fff;border-color:var(--no)}
+#score{font-weight:800;margin-top:10px}
+svg text{font-family:Manrope,system-ui,sans-serif}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Present Continuous</h1>
+<p class="lead">Hozir davom etayotgan harakatlarni ifodalovchi zamon. Qoidalar, misollar, rasmlar va mashq — hammasi bir sahifada.</p>
+<nav><a href="#nima">Nima bu?</a><a href="#shakl">Shakli</a><a href="#ing">-ing qoidalari</a><a href="#qollash">Qo'llanishi</a><a href="#vaqt">Signal so'zlar</a><a href="#holat">Holat fe'llari</a><a href="#farq">Simple bilan farqi</a><a href="#xato">Xatolar</a><a href="#test">Mashq</a></nav>
+
+<svg viewBox="0 0 800 190" role="img" aria-label="Zamon chizig'i: o'tgan, hozir, kelajak" style="width:100%;height:auto">
+<line x1="30" y1="95" x2="770" y2="95" stroke="var(--line)" stroke-width="6" stroke-linecap="round"/>
+<line x1="300" y1="95" x2="500" y2="95" stroke="var(--sun)" stroke-width="12" stroke-linecap="round"/>
+<circle cx="400" cy="95" r="26" fill="var(--sun)"/>
+<text x="400" y="101" text-anchor="middle" font-weight="800" font-size="16" fill="#13203b">NOW</text>
+<text x="400" y="150" text-anchor="middle" font-weight="800" font-size="19" fill="var(--ink)">I am reading.</text>
+<text x="400" y="172" text-anchor="middle" font-size="14" fill="var(--mute)">Men hozir o'qiyapman.</text>
+<text x="110" y="75" text-anchor="middle" font-size="17" fill="var(--mute)">O'tgan (Past)</text>
+<text x="690" y="75" text-anchor="middle" font-size="17" fill="var(--mute)">Kelajak (Future)</text>
+<circle cx="110" cy="95" r="9" fill="var(--mute)"/><circle cx="690" cy="95" r="9" fill="var(--mute)"/>
+</svg>
+</header>
+
+<section id="nima">
+<h2>1. Present Continuous nima?</h2>
+<p>Present Continuous (yoki Present Progressive) — <b>gap aytilayotgan payt</b>da yoki shu davr atrofida davom etayotgan harakatni bildiradi. Harakat hali tugamagan, jarayon ketmoqda.</p>
+<p>O'zbek tilida u odatda <b>-yapman, -yapsan, -yapti, -moqda</b> qo'shimchalariga mos keladi.</p>
+<div class="ex"><b>She is cooking dinner now.</b><span>U hozir kechki ovqat tayyorlayapti.</span></div>
+</section>
+
+<section id="shakl">
+<h2>2. Shakli (Formation)</h2>
+<div class="formula">am / is / are + fe'l + -ing</div>
+<div class="tbl"><table>
+<tr><th>Olmosh</th><th>To be</th><th>Darak gap (+)</th><th>Inkor (−)</th></tr>
+<tr><td>I</td><td>am</td><td class="pos">I am working.</td><td class="neg">I am not working.</td></tr>
+<tr><td>He / She / It</td><td>is</td><td class="pos">She is working.</td><td class="neg">She is not (isn't) working.</td></tr>
+<tr><td>You / We / They</td><td>are</td><td class="pos">They are working.</td><td class="neg">They are not (aren't) working.</td></tr>
+</table></div>
+<h3>Savol gap (?)</h3>
+<p>To be (am/is/are) gap boshiga chiqadi:</p>
+<div class="formula">Am / Is / Are + ega + fe'l-ing ?</div>
+<div class="ex"><b>Are you studying English?</b><span>Siz ingliz tilini o'rganyapsizmi?</span></div>
+<div class="ex"><b>What is he doing?</b><span>U nima qilyapti?</span></div>
+<h3>Qisqa javoblar</h3>
+<div class="tbl"><table>
+<tr><th>Savol</th><th>Ha</th><th>Yo'q</th></tr>
+<tr><td>Are you sleeping?</td><td class="pos">Yes, I am.</td><td class="neg">No, I'm not.</td></tr>
+<tr><td>Is she reading?</td><td class="pos">Yes, she is.</td><td class="neg">No, she isn't.</td></tr>
+<tr><td>Are they playing?</td><td class="pos">Yes, they are.</td><td class="neg">No, they aren't.</td></tr>
+</table></div>
+<h3>Qisqartmalar</h3>
+<p><span class="tag">I'm</span><span class="tag">you're</span><span class="tag">he's</span><span class="tag">she's</span><span class="tag">it's</span><span class="tag">we're</span><span class="tag">they're</span></p>
+</section>
+
+<section id="ing">
+<h2>3. -ing qo'shish qoidalari</h2>
+<div class="tbl"><table>
+<tr><th>Qoida</th><th>Misol</th></tr>
+<tr><td>Ko'pchilik fe'llarga oddiy <b>-ing</b> qo'shiladi</td><td>work → working<br>play → playing<br>eat → eating</td></tr>
+<tr><td><b>-e</b> bilan tugasa, e tushib qoladi</td><td>make → making<br>write → writing<br>dance → dancing</td></tr>
+<tr><td><b>-ie</b> bilan tugasa, ie → <b>y</b></td><td>lie → lying<br>die → dying<br>tie → tying</td></tr>
+<tr><td>Qisqa fe'l <b>undosh + unli + undosh</b> bilan tugasa, oxirgi undosh ikkilanadi</td><td>run → running<br>sit → sitting<br>swim → swimming<br>stop → stopping</td></tr>
+<tr><td>Oxirgi harf <b>w, x, y</b> bo'lsa ikkilanmaydi</td><td>snow → snowing<br>fix → fixing<br>stay → staying</td></tr>
+<tr><td>Ikki bo'g'inli fe'lda urg'u oxirgi bo'g'inda bo'lsa ikkilanadi</td><td>begin → beginning<br>(lekin visit → visiting)</td></tr>
+</table></div>
+</section>
+
+<section id="qollash">
+<h2>4. Qachon ishlatiladi?</h2>
+<div class="grid">
+<div class="mini">
+<svg viewBox="0 0 200 96" aria-hidden="true"><rect x="60" y="48" width="80" height="34" rx="4" fill="var(--sun)"/><rect x="66" y="52" width="32" height="26" fill="var(--card)"/><rect x="102" y="52" width="32" height="26" fill="var(--card)"/><circle cx="100" cy="28" r="14" fill="var(--acc)"/><path d="M100 42v8" stroke="var(--acc)" stroke-width="4"/></svg>
+<h3>① Hozir bo'layotgan harakat</h3>
+<div class="ex"><b>I am reading a book now.</b><span>Men hozir kitob o'qiyapman.</span></div>
+</div>
+<div class="mini">
+<svg viewBox="0 0 200 96" aria-hidden="true"><ellipse cx="100" cy="34" rx="48" ry="22" fill="var(--mute)" opacity=".6"/><g stroke="var(--acc)" stroke-width="4" stroke-linecap="round"><path d="M70 66l-6 14M90 66l-6 14M110 66l-6 14M130 66l-6 14"/></g></svg>
+<h3>② Ko'z o'ngimizda (Look! Listen!)</h3>
+<div class="ex"><b>Look! It is raining.</b><span>Qara! Yomg'ir yog'yapti.</span></div>
+</div>
+<div class="mini">
+<svg viewBox="0 0 200 96" aria-hidden="true"><rect x="30" y="50" width="22" height="30" fill="var(--acc)"/><rect x="62" y="38" width="22" height="42" fill="var(--acc)"/><rect x="94" y="24" width="22" height="56" fill="var(--acc)"/><rect x="126" y="10" width="22" height="70" fill="var(--sun)"/><path d="M40 40L138 6" stroke="var(--ink)" stroke-width="3" stroke-dasharray="5 5"/></svg>
+<h3>③ O'zgarayotgan vaziyat</h3>
+<div class="ex"><b>The population is growing.</b><span>Aholi soni o'syapti.</span></div>
+</div>
+<div class="mini">
+<svg viewBox="0 0 200 96" aria-hidden="true"><rect x="40" y="14" width="120" height="68" rx="8" fill="var(--card)" stroke="var(--acc)" stroke-width="4"/><rect x="40" y="14" width="120" height="18" rx="8" fill="var(--acc)"/><circle cx="125" cy="58" r="12" fill="var(--sun)"/></svg>
+<h3>④ Aniq kelajak rejasi</h3>
+<div class="ex"><b>I am meeting Ali tomorrow.</b><span>Ertaga Ali bilan uchrashaman (kelishilgan).</span></div>
+</div>
+<div class="mini">
+<svg viewBox="0 0 200 96" aria-hidden="true"><circle cx="100" cy="48" r="34" fill="none" stroke="var(--line)" stroke-width="8"/><path d="M100 14a34 34 0 0 1 34 34" fill="none" stroke="var(--sun)" stroke-width="8" stroke-linecap="round"/><path d="M134 48l-10-10M134 48l10-10" stroke="var(--acc)" stroke-width="4"/></svg>
+<h3>⑤ Vaqtinchalik holat</h3>
+<div class="ex"><b>I am living with my aunt this month.</b><span>Shu oy xolamnikida turyapman.</span></div>
+</div>
+<div class="mini">
+<svg viewBox="0 0 200 96" aria-hidden="true"><circle cx="100" cy="48" r="30" fill="var(--no)" opacity=".85"/><circle cx="90" cy="42" r="4" fill="#fff"/><circle cx="110" cy="42" r="4" fill="#fff"/><path d="M86 64q14-10 28 0" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+<h3>⑥ always bilan — g'ashlik</h3>
+<div class="ex"><b>He is always losing his keys!</b><span>U doim kalitini yo'qotadi-da! (xafa bo'lib)</span></div>
+</div>
+</div>
+</section>
+
+<section id="vaqt">
+<h2>5. Signal so'zlar</h2>
+<p><span class="tag">now</span><span class="tag">right now</span><span class="tag">at the moment</span><span class="tag">at present</span><span class="tag">currently</span><span class="tag">today</span><span class="tag">these days</span><span class="tag">this week / month / year</span><span class="tag">tonight</span><span class="tag">tomorrow</span><span class="tag">next week</span><span class="tag">still</span></p>
+<p>Buyruq gaplar ham signal bo'ladi: <b>Look!</b> <b>Listen!</b> <b>Be quiet!</b> <b>Watch out!</b></p>
+<div class="ex"><b>Listen! Somebody is singing.</b><span>Quloq sol! Kimdir kuylayapti.</span></div>
+</section>
+
+<section id="holat">
+<h2>6. Continuous'da ishlatilmaydigan fe'llar (State verbs)</h2>
+<p>Ba'zi fe'llar harakatni emas, <b>holat, his-tuyg'u yoki fikrni</b> bildiradi. Ular odatda Present Continuous'da ishlatilmaydi.</p>
+<div class="tbl"><table>
+<tr><th>Guruh</th><th>Fe'llar</th></tr>
+<tr><td>His-tuyg'u</td><td>like, love, hate, want, need, prefer</td></tr>
+<tr><td>Fikr</td><td>know, understand, believe, think (= fikrda bo'lmoq), remember, forget, mean</td></tr>
+<tr><td>Sezgi</td><td>see, hear, smell, taste, seem, sound</td></tr>
+<tr><td>Egalik</td><td>have (= ega bo'lmoq), own, belong, contain</td></tr>
+</table></div>
+<div class="ex"><b class="neg">✗ I am knowing the answer.</b><b class="pos">✓ I know the answer.</b><span>Men javobni bilaman.</span></div>
+<h3>Istisno: ma'nosi o'zgarsa ishlatiladi</h3>
+<div class="tbl"><table>
+<tr><th>Holat (Simple)</th><th>Harakat (Continuous)</th></tr>
+<tr><td>I <b>have</b> a car. (menda mashina bor)</td><td>I <b>am having</b> lunch. (tushlik qilyapman)</td></tr>
+<tr><td>I <b>think</b> it's good. (menimcha)</td><td>I <b>am thinking</b> about my job. (o'ylayapman)</td></tr>
+<tr><td>It <b>smells</b> good. (hidi yaxshi)</td><td>She <b>is smelling</b> the flower. (hidlayapti)</td></tr>
+<tr><td>You <b>look</b> tired. (ko'rinasiz)</td><td>I <b>am looking</b> at the sky. (qarayapman)</td></tr>
+</table></div>
+</section>
+
+<section id="farq">
+<h2>7. Present Simple va Present Continuous farqi</h2>
+<div class="tbl"><table>
+<tr><th></th><th>Present Simple</th><th>Present Continuous</th></tr>
+<tr><td>Ma'nosi</td><td>Odat, doimiy haqiqat, jadval</td><td>Hozir bo'layotgan yoki vaqtinchalik harakat</td></tr>
+<tr><td>Shakli</td><td>V1 / V1+s</td><td>am/is/are + V-ing</td></tr>
+<tr><td>Signal</td><td>always, usually, every day, often, never</td><td>now, at the moment, today, these days</td></tr>
+<tr><td>Misol</td><td>She <b>drinks</b> tea every morning.</td><td>She <b>is drinking</b> tea now.</td></tr>
+<tr><td>Tarjima</td><td>U har tong choy ichadi.</td><td>U hozir choy ichyapti.</td></tr>
+</table></div>
+</section>
+
+<section id="xato">
+<h2>8. Ko'p uchraydigan xatolar</h2>
+<div class="warn"><b class="neg">✗ She working now.</b> → <b class="pos">✓ She <u>is</u> working now.</b><br>am/is/are tushib qolmasin.</div>
+<div class="warn"><b class="neg">✗ He is work.</b> → <b class="pos">✓ He is working.</b><br>am/is/are dan keyin -ing shart.</div>
+<div class="warn"><b class="neg">✗ Is she cooks?</b> → <b class="pos">✓ Is she cooking?</b><br>Savolda ham -ing saqlanadi.</div>
+<div class="warn"><b class="neg">✗ I am wanting a coffee.</b> → <b class="pos">✓ I want a coffee.</b><br>State verb Continuous'da ishlatilmaydi.</div>
+<div class="warn"><b class="neg">✗ He is runing.</b> → <b class="pos">✓ He is running.</b><br>Undosh ikkilanishini unutmang.</div>
+</section>
+
+<section id="test">
+<h2>9. Mashq</h2>
+<p>To'g'ri javobni tanlang:</p>
+<div id="quiz"></div>
+<div id="score"></div>
+</section>
+</main>
+<script>
+var Q=[
+["Look! The children ___ in the park.",["play","are playing","is playing"],1],
+["She ___ TV at the moment.",["isn't watching","doesn't watching","not watching"],0],
+["___ you studying now?",["Do","Is","Are"],2],
+["I ___ this song. It's great!",["am liking","like","likes"],1],
+["They ___ football tomorrow afternoon (reja).",["are playing","plays","playing"],0],
+["Spelling: run →",["runing","running","runninging"],1],
+["He ___ lunch right now.",["is having","have","has"],0],
+["Spelling: write →",["writeing","writting","writing"],2]
+],done=0,right=0,box=document.getElementById("quiz");
+Q.forEach(function(q,i){
+var d=document.createElement("div");d.className="q";
+d.innerHTML="<b>"+(i+1)+". "+q[0]+"</b>";
+var o=document.createElement("div");o.className="opts";
+q[1].forEach(function(t,j){
+var b=document.createElement("button");b.textContent=t;
+b.onclick=function(){
+if(d.dataset.d)return;d.dataset.d=1;done++;
+if(j===q[2]){b.className="right";right++}else{b.className="wrong";o.children[q[2]].className="right"}
+if(done===Q.length)document.getElementById("score").textContent="Natija: "+right+" / "+Q.length+(right===Q.length?" — a'lo!":right>5?" — yaxshi!":" — yana bir bor takrorlang.");
+};
+o.appendChild(b)});
+d.appendChild(o);box.appendChild(d)});
+</script>
+</body>
+</html>
